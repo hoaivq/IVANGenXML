@@ -33,6 +33,3 @@ namespace IVANGenXMLService
         public string XmlValue { get; set; }
     }
 }
-
-
-// HoaiVQ

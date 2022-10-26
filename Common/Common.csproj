@@ -46,6 +46,7 @@
     <Compile Include="Class\AppCommon.cs" />
     <Compile Include="Class\AppLog.cs" />
     <Compile Include="Class\AppSetting.cs" />
+    <Compile Include="Enums.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="MyApp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

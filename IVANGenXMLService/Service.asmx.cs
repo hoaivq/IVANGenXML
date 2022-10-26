@@ -21,6 +21,39 @@ namespace IVANGenXMLService
     {
 
         [WebMethod]
+        public MsgResult GenXML_HoSo(Hoso objHoSo)
+        {
+            try
+            {
+                string MaThuTuc = objHoSo.NoiDung.ThongTinHoSo.MaThuTuc;
+                List<FileToKhai> lstToKhai = objHoSo.NoiDung.ThongTinHoSo.ToKhais.FileToKhai;
+
+                // Đoạn này sẽ phải valid theo từng thủ tục
+                if (MaThuTuc == EMaThuTuc.H602)
+                {
+                    
+                }
+                else if (MaThuTuc == EMaThuTuc.H602)
+                {
+
+                }
+                // Ông else if nốt các mã thủ tục còn lại nhé
+                else
+                {
+                    return new MsgResult(false, "Không tồn tại mã thủ tục " + MaThuTuc);
+                }
+
+                string MsgXML = objHoSo.ToXML<Hoso>();
+                return new MsgResult(true, "", MsgXML);
+            }
+            catch (Exception ex)
+            {
+                return new MsgResult("GenXML_HoSo", ex);
+            }
+        }
+
+
+        [WebMethod]
         public MsgResult GenXML_D01(D01TS objToKhai)
         {
             try
