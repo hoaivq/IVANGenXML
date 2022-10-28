@@ -32,4 +32,6 @@ namespace IVANGenXMLService
         public string Message { get; set; }
         public string XmlValue { get; set; }
     }
+
+
 }

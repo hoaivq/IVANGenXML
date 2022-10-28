@@ -23,6 +23,16 @@ namespace Common
             }
         }
 
+        public static T ToObject<T>(this string input) where T : class
+        {
+            XmlSerializer ser = new XmlSerializer(typeof(T));
+            using (StringReader sr = new StringReader(input))
+            {
+                return (T)ser.Deserialize(sr);
+            }
+        }
+
+
         public static void ValidNode(this XmlDocument xDoc, string Path, ref StringBuilder sbMsg, bool IsValidEmpty = false, int MaxLength = -1, bool IsValidNumber = false, bool IsValidDate = false)
         {
             string Value = xDoc.SelectSingleNode(Path).InnerText;

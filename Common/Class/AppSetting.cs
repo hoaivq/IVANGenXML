@@ -43,6 +43,5 @@ namespace Common.Class
                 return _LogDir;
             }
         }
-
     }
 }

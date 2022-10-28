@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root>
+	<ValidHoSo>
+		<MaThuTuc>602</MaThuTuc>
+		<ListToKhaiPhaiCo>D05-TS,TK1-TS</ListToKhaiPhaiCo>
+		<ListToKhaiCoTheCo>D05-TS,TK1-TS,D01-TS,CT-DK</ListToKhaiCoTheCo>
+	</ValidHoSo>
+	<ValidHoSo>
+		<MaThuTuc>603</MaThuTuc>
+		<ListToKhaiPhaiCo>D05-TS</ListToKhaiPhaiCo>
+		<ListToKhaiCoTheCo>D05-TS,TK1-TS,CT-DK</ListToKhaiCoTheCo>
+	</ValidHoSo>
+	
+	<!--Thêm thủ tục thì cấu hình thêm vào file này-->
+</Root>
